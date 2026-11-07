@@ -29,8 +29,6 @@ To fetch GPU statistics without triggering disruptive command prompt windows or 
 * **Caching:** It queries utilization and temperature (`--query-gpu=utilization.gpu,temperature.gpu --format=csv,noheader,nounits`) and pipes the raw output straight into a temporary cache file using `RunWait` with the `"Hide"` flag.
 * **Parsing & Safety:** The script reads the cache file, strips out invisible Windows carriage returns and newlines (`\r\n`), safely casts values to numbers, rounds the temperature to a clean integer, and formats the output string with a proper degree symbol (`Chr(176)`).
 
-* ###########################################################################################################################################
-
 * # Quick Screen Capture (`quickScreenCapture.ahk`)
 
 A slick, lightweight screen region capture utility built using AutoHotkey v2.0[cite: 9]. By holding Ctrl and dragging with the right mouse button, it draws a live selection box and instantly copies the targeted screen area straight to your Windows clipboard[cite: 9].
